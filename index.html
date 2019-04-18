@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Cryptokitty Labeler</title>
+
+    <link rel="canonical" href="index.html">
+
+    <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.3/examples/sign-in/signin.css" rel="stylesheet">
+    <link href="application.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <div class="img-wrapper">
+      <img id="img-profile" src="" />
+    </div>
+
+    <br/>
+
+    <form class="form-signin">
+      <h1 class="h3 mb-3 font-weight-normal">Does this kitty look like a criminal?</h1>
+      <button id="yes" class="btn btn-lg btn-secondary btn-block">Yes</button>
+      <button id="no" class="btn btn-lg btn-secondary btn-block">No</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+
+    <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="kitties.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      const kittyIndex = Math.floor(Math.random()*kittyImages.length)
+      const kittySrc = kittyImages[kittyIndex]
+      document.getElementById("img-profile").src = "images/" + kittySrc
+
+      // Randomly switch the side so the experience isn't so static
+      if (Math.random() < 0.5) {
+        document.body.style.flexDirection = 'row-reverse'
+      }
+    </script>
+  </body>
+</html>
