@@ -1,6 +1,8 @@
 Operation Criminal Kitty
 ========================
 
+JUMP: [@buoydontfloat](http://cryptokitty-phrenology.buoydontfloat.com/)
+
 ![](criminal-kitty.png)
 
 References
