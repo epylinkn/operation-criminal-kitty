@@ -42,6 +42,32 @@
       if (Math.random() < 0.5) {
         document.body.style.flexDirection = 'row-reverse'
       }
+
+      $(document).ready(function() {
+        $('#yes').on('click', function(event) {
+          event.preventDefault()
+          $.get(`i.gif`,
+            {
+              kittySrc: kittySrc,
+              kittyIndex: kittyIndex,
+              answer: 'yes'
+            },
+            function() { window.location.reload() }
+          )
+        })
+
+        $('#no').on('click', function(event) {
+          event.preventDefault()
+          $.get(`i.gif`,
+            {
+              kittySrc: kittySrc,
+              kittyIndex: kittyIndex,
+              answer: 'no'
+            },
+            function() { window.location.reload() }
+          )
+        })
+      })
     </script>
   </body>
 </html>
