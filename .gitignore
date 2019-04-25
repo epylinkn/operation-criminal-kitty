@@ -1,2 +1,5 @@
 sync_scratch.rb
 *.s3cfg
+scrape/images
+scrape/databases
+.env
