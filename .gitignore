@@ -3,5 +3,5 @@ sync_scratch.rb
 scrape/images
 scrape/databases
 .env
-classification/data/
-classification/hires/
+classification/data
+classification/hires
