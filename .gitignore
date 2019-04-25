@@ -4,3 +4,4 @@ scrape/images
 scrape/databases
 .env
 classification/data/
+classification/hires/
