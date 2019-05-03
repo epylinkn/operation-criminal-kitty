@@ -11,7 +11,7 @@
 
 module purge
 module load keras/2.0.2 
-
+module load python3/intel/3.6.3  
 cd /scratch/jx603/operation-criminal-kitty/classification/
 
 python train.py
