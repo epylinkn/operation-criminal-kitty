@@ -100,6 +100,10 @@ IMO this is where the project gets interesting because there isn't an actual dat
 
 ## DEMO: Chrome Extension
 
+![Jailed Demo](/00-documentation/jailed-1.png)
+
+![Jailed Demo 3](/00-documentation/jailed-3.png)
+
 ---
 ---
 
