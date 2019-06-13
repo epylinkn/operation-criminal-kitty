@@ -72,7 +72,7 @@ function drawStuff(result){
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse){
         if(request.greeting == "updated"){
-            setTimeout(check4Kitties,1000)
+            setTimeout(check4Kitties,1200)
             sendResponse({farewell: "checked"})
         }
     }
